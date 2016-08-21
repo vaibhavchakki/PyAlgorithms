@@ -1,10 +1,11 @@
+import sys
 
 class CoinSum:
     def __init__(self):
         pass
 
     def Sum(self, v, s):
-        min = [9999] * (s + 1)
+        min = [sys.maxint] * (s + 1)
         min[0] = 0
 
         for i in range(1, s + 1):
